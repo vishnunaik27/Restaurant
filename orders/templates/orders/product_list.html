@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1>Menu</h1>
+<ul>
+    {% for product in products %}
+    <li>
+        <strong> {{ product.name }}</strong> - {{ product.price }} INR
+        <br>
+        {{ product.description }}
+        <br>
+        <a href="{ }" >Order Now</a>
+    </li>
+    {% endfor %}
+</ul>
+</html>
